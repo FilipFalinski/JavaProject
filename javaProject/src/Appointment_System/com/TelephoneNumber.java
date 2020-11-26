@@ -7,9 +7,9 @@ public class TelephoneNumber {
     private int lineNumber;
 
     public TelephoneNumber(int areaCode, int prefix, int lineNumber) {
-        this.areaCode = areaCode;
-        this.prefix = prefix;
-        this.lineNumber = lineNumber;
+        setAreaCode(areaCode);
+        setPrefix(prefix);
+        setLineNumber(lineNumber);
     }
 
     public int getAreaCode() {
@@ -39,9 +39,9 @@ public class TelephoneNumber {
     @Override
     public String toString() {
         return "TelephoneNumber{" +
-                "areaCode=" + areaCode +
-                ", prefix=" + prefix +
-                ", lineNumber=" + lineNumber +
+                "areaCode=" + getAreaCode() +
+                ", prefix=" + getPrefix() +
+                ", lineNumber=" + getLineNumber() +
                 '}';
     }
 }
