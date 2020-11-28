@@ -7,4 +7,6 @@ public class Scheduler {
     private int displayAppointment;
     private int displaySchedule;
     private int exit;
+
+
 }
