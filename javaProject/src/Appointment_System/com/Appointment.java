@@ -1,41 +1,29 @@
 package Appointment_System.com;
 
+
 import java.util.Calendar;
 
 public class Appointment {
 
-    private String firstName;
-    private String lastName;
+    private String Name;
     private TelephoneNumber phone;
     private Activity activity;
     private Calendar aptDate;
 
 
-
-
-
-    public Appointment(Calendar aptDate,String firstName, String lastName, TelephoneNumber phone, Activity activity) {
-        setFirstName(firstName);
-        setLastName(lastName);
+    public Appointment(String name, TelephoneNumber phone, Activity activity, Calendar aptDate) {
+        setName(name);
         setPhone(phone);
         setActivity(activity);
         setAptDate(aptDate);
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getName() {
+        return Name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setName(String name) {
+        Name = name;
     }
 
     public TelephoneNumber getPhone() {
@@ -65,8 +53,7 @@ public class Appointment {
     @Override
     public String toString() {
         return "Appointment{" +
-                "firstName='" + getFirstName() + '\'' +
-                ", lastName='" + getActivity() + '\'' +
+                "Name='" + getName() + '\'' +
                 ", phone=" + getPhone() +
                 ", activity=" + getActivity() +
                 ", aptDate=" + getAptDate() +
